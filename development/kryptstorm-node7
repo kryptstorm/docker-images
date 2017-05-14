@@ -1,0 +1,13 @@
+FROM node:7
+
+LABEL AUTHOR="TuanNguyen"
+LABEL VERSION="1.0.0"
+
+# Create kryptstorm code folder
+RUN mkdir /code
+WORKDIR /code
+
+# Expose kryptstorm port
+EXPOSE 9999
+EXPOSE 9998
+EXPOSE 9997
