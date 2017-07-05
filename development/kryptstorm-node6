@@ -1,4 +1,4 @@
-FROM node:7
+FROM node:6
 
 LABEL AUTHOR="TuanNguyen"
 LABEL VERSION="1.0.0"
@@ -6,6 +6,9 @@ LABEL VERSION="1.0.0"
 # Create kryptstorm code folder
 RUN mkdir /code
 WORKDIR /code
+
+# TypeScript
+RUN npm install -g typescript
 
 # Expose kryptstorm port
 EXPOSE 9999
